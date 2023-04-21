@@ -71,7 +71,7 @@ export async function getServerSideProps({ req }) {
     return {
       redirect: {
         destination: "/dashboard",
-        permanent: true,
+        permanent: false,
       },
     };
   } 
