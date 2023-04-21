@@ -212,14 +212,12 @@ button{
   width: 30px;
   border-radius: 20px;
 }
-@media only screen and (max-width:668px){
-  .navbar{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-start; 
-  }
+.tooltip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
  
+  margin:-3rem 1rem;
 }
 
 

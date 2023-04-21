@@ -8,12 +8,12 @@ const Navbar = () => {
   return (
   
     
-    <nav className="flex flex-col justify-between px-6 py-3 items-center  sm:flex-row navbar ">
+    <nav className="flex justify-around md:justify-between  px-5 py-2 items-center  sm:flex-row navbar ">
       <h1 className="text-xl text-gray-800 font-bold ">Dashboard</h1>
-      <div className="flex items-center gap-6">
-        <div className="flex items-center bg-white px-2 py-1.5 search">
+      <div className="flex justify-ceneter items-center gap-6">
+        <div className="md:flex items-center bg-white px-2 py-1.5 search hidden">
           <input
-            className="ml-2 outline-none rounded "
+            className="ml-2 outline-none rounded"
             type="text"
             name="search"
             id="search"
@@ -21,7 +21,7 @@ const Navbar = () => {
           />
           <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon text-gray-400" />
         </div>
-        <ul className="flex items-center space-x-6">
+        <ul className="flex justify-center items-center space-x-6">
           <li>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,9 @@ const Navbar = () => {
             </svg>
           </li>
           <li onClick={()=>signOut()} style={{cursor:"pointer"}}>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp3DxP80ArpRzsB0XWBG9Ow5GeuefbLrUHw&usqp=CAU" alt="avtar" className='avtar'/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp3DxP80ArpRzsB0XWBG9Ow5GeuefbLrUHw&usqp=CAU" alt="avtar" className='avtar ' />
+            <span class="hover:opacity-100  opacity-0 bg-gray-500 transition-opacity text-white px-1 text-sm  rounded-md absolute left-3/6  border  
+    -translate-x-1/4 translate-y-full m-4 tooltip">Sign Out</span>
           </li>
         </ul>
       </div>
