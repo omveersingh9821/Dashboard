@@ -42,12 +42,7 @@ const Left = () => {
               <span className="px-3">Users</span>
             </a>
           </li>
-          <li>
-            <a href="#" className="flex items-center px-5 py-3 text-white">
-              <FontAwesomeIcon icon={faCircleUser} className="icon" />
-              <span className="px-3">Users</span>
-            </a>
-          </li>
+         
           <li>
             <a href="#" className="flex items-center px-5 py-3 text-white">
               <FontAwesomeIcon icon={faGear} className="icon" />

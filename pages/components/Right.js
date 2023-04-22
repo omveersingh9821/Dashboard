@@ -20,7 +20,7 @@ const Right = () => {
       <Navbar />
       <div className="p-4 ">
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4 mb-4">
-          <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800 ">
+          <div className="flex items-center justify-center h-24 rounded bg-gray-50 ">
             <Card
               color="#bcf2d6"
               head="Total Revenues"
@@ -28,7 +28,7 @@ const Right = () => {
               icons={faGauge}
             />
           </div>
-          <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+          <div className="flex items-center justify-center h-24 rounded bg-gray-50 ">
             <Card
               color="#f4e5c1"
               head="Total Transactions"
@@ -36,7 +36,7 @@ const Right = () => {
               icons={faTags}
             />
           </div>
-          <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+          <div className="flex items-center justify-center h-24 rounded bg-gray-50 ">
             <Card
               color="#EFDADA"
               head="Total Likes"
@@ -44,7 +44,7 @@ const Right = () => {
               icons={faThumbsUp}
             />
           </div>
-          <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800 ">
+          <div className="flex items-center justify-center h-24 rounded bg-gray-50  ">
             <Card
               color="#DEE0EF"
               head="Total Users"
@@ -54,7 +54,7 @@ const Right = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center h-70 mb-4 rounded dark:bg-gray-800 graph">
+        <div className="flex items-center justify-center h-70 mb-4 rounded  graph">
           <Chart />
         </div>
 
@@ -62,7 +62,7 @@ const Right = () => {
           <div className="flex items-center justify-center rounded ">
             <Card2 />
           </div>
-          <div className="flex items-center justify-center rounded  dark:bg-gray-800">
+          <div className="flex items-center justify-center rounded  ">
             <Card3 />
           </div>
         </div>

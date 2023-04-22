@@ -24,12 +24,9 @@ const dashboard = () => {
           />
         </Disclosure.Button>
         <div className="p-6 w-1/4 h-screen  z-20 fixed top-0 -left-96 lg:left-0 peer-focus:left-0 perr-transition ease-out delay-150 duration-200">
-              <Left />  
-              </div>
-        
+          <Left />
+        </div>
       </Disclosure>
-
-      
 
       <Right />
     </div>
