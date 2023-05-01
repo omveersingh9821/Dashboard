@@ -7,6 +7,8 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { getSession } from "next-auth/react"
+
 import Navbar from "./Navbar";
 import Card from "./Card";
 import Card2 from "./Card2";
@@ -20,7 +22,7 @@ const Right = () => {
       <Navbar />
       <div className="p-4 ">
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4 mb-4">
-          <div className="flex items-center justify-center h-24 rounded bg-gray-50 ">
+          <div className="flex items-center justify-center h-24 rounded  ">
             <Card
               color="#bcf2d6"
               head="Total Revenues"
@@ -28,7 +30,7 @@ const Right = () => {
               icons={faGauge}
             />
           </div>
-          <div className="flex items-center justify-center h-24 rounded bg-gray-50 ">
+          <div className="flex items-center justify-center h-24 rounded  ">
             <Card
               color="#f4e5c1"
               head="Total Transactions"
@@ -36,7 +38,7 @@ const Right = () => {
               icons={faTags}
             />
           </div>
-          <div className="flex items-center justify-center h-24 rounded bg-gray-50 ">
+          <div className="flex items-center justify-center h-24 rounded  ">
             <Card
               color="#EFDADA"
               head="Total Likes"
@@ -44,7 +46,7 @@ const Right = () => {
               icons={faThumbsUp}
             />
           </div>
-          <div className="flex items-center justify-center h-24 rounded bg-gray-50  ">
+          <div className="flex items-center justify-center h-24 rounded   ">
             <Card
               color="#DEE0EF"
               head="Total Users"
@@ -70,5 +72,23 @@ const Right = () => {
     </div>
   );
 };
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  } 
+  return {
+    props: {
+      session,
+    },
+  };
+}
 
 export default Right;

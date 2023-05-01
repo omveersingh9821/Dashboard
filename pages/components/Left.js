@@ -7,6 +7,7 @@ import {
   faTags,
   faGauge,
 } from "@fortawesome/free-solid-svg-icons";
+import { getServerSideProps } from "..";
 
 const Left = () => {
   return (
@@ -58,5 +59,7 @@ const Left = () => {
     </aside>
   );
 };
+
+
 
 export default Left;

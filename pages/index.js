@@ -9,9 +9,7 @@ import { useSession, signIn, signOut, getSession } from "next-auth/react" //dete
 import { useEffect, useState } from "react";
 
 export default function Home({session}) {
-  
-  
-  
+
   console.log(session);
 
   return (
@@ -30,7 +28,7 @@ export default function Home({session}) {
                 <Image src={google} alt="google" />
                 <span>Sign in with Google</span>
                 </button>
-                </a>
+              </a>
             </div>
             <div>
               <button className="hover:bg-blue-500 hover:text-white">
